@@ -11,13 +11,7 @@ const sendButton = document.getElementById("send-button");
 const typingIndicator = document.getElementById("typing-indicator");
 
 // Chat state
-let chatHistory = [
-	{
-		role: "assistant",
-		content:
-			"Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can I help you today?",
-	},
-];
+let chatHistory = [];
 let isProcessing = false;
 
 // Auto-resize textarea as user types
